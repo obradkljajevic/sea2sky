@@ -1,9 +1,10 @@
 const images = [
-    "img1.jpg",
-    "img2.jpg",
-    "img6.jpg",
-    "img7.jpg",
-    "durmitor.webp"
+    "background/img1.jpg",
+    "background/img2.jpg",
+    "background/img6.jpg",
+    "background/img3.png",
+    "background/img7.jpg",
+    "background/durmitor.webp"
 ];
 
 let i=0;
@@ -16,4 +17,4 @@ function changeBackground() {
 
 changeBackground();
 
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 3000);

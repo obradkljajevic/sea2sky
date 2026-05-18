@@ -2,13 +2,68 @@
 <html>
     <head>
         <title>Sea to Sky</title>
+        <link rel="icon" type="image/png" href="sea2sky.png">
         <meta charset="utf-8">
         <link rel="stylesheet" href="SeaToSky.css">
     </head>
     <body>
         <div id="header-placeholder"></div>
         <section id="first">
-
+            <div id="hero">
+                <h2>Discover Montenegro</h2>
+                <h3>from sea to sky</h3>
+            </div>
+            <div class="hero-content">
+                <div class="search-bar">
+                    <div class="field">
+                        <span class="field-label">Destination</span>
+                        <select>
+                            <option value="">Choose city</option>
+                            <option value="kotor">Kotor</option>
+                            <option value="budva">Budva</option>
+                            <option value="tivat">Tivat</option>
+                            <option value="herceg-novi">Herceg Novi</option>
+                            <option value="bar">Bar</option>
+                            <option value="ulcinj">Ulcinj</option>
+                            <option value="petrovac">Petrovac</option>
+                            <option value="zabljak">Žabljak</option>
+                            <option value="kolasin">Kolašin</option>
+                            <option value="podgorica">Podgorica</option>
+                            <option value="cetinje">Cetinje</option>
+                            <option value="perast">Perast</option>
+                            <option value="sveti-stefan">Sveti Stefan</option>
+                            <option value="plav">Plav</option>
+                            <option value="bijelo-polje">Bijelo Polje</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Type</span>
+                        <select>
+                            <option value="">Choose type</option>
+                            <option value="coastal">Coastal</option>
+                            <option value="mountain">Mountain</option>
+                            <option value="national-park">National Park</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Date</span>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <span class="field-label">Visitors</span>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+                    <button class="search-btn">Search →</button>
+                </div>
+            </div>
+            <div class="scroll-hint" id="firstScroll">
+                <span>&#8595;</span>
+            </div>
         </section>
         <script src="header.js" defer></script>
         <script src="main.js"></script>
