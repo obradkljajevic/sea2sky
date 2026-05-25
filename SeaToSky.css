@@ -163,18 +163,27 @@
 .search-btn:hover {
     box-shadow: 2px 2px 2px gray;
 }
-.scroll-hint {
+.scroll-btn{
     position: absolute;
-    bottom: 20px;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    font-size: 70px;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
     animation: bounce 1.5s infinite;
+}
+.scroll-btn.down {
+    bottom: 40px;
+}
+.scroll-btn.up {
+    top: -40px;
 }
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(6px); }
 }
-
 .nav-item{
     position: relative;
     display: inline-block;
@@ -221,20 +230,26 @@
     background-color: #030369;
 }
 .category {
-    padding: 60px 80px;
-    justify-content: center;
+    padding: 60px 80px 120px 80px;
+    position: relative;
+    height: (100% - 80px);
+    margin: auto;
 }
 .category h2 {
     font-size: 28px;
     margin-bottom: 30px;
     color: white;
 }
+#water{
+    align-self: center;
+    height: 100%;
+}
 .cards {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .card {

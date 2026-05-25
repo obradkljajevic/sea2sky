@@ -9,7 +9,7 @@
     <body class="act-body">
         <div id="header-placeholder">
         </div>
-        <section class="category">
+        <section class="category" id="hiking">
         <h2>Hiking & Nature</h2>
         <div class="cards">
             <div class="card">
@@ -43,61 +43,86 @@
                 </p>
             </div>
         </div>
+        <button class="scroll-btn down" id="hikingScroll" onclick="scrollNext('hiking')">
+                <span>&#8595;</span>
+            </button>
+        
     </section>
-    <section class="category">
+    <section class="category" id="water">
         <h2>Water Activities</h2>
         <div class="cards">
 
             <div class="card">
-                <img src="images/water1.jpg">
-                <h3>Kotor Bay Kayaking</h3>
-                <p>Discover hidden beaches and caves from the water.</p>
+                <img src="activities/skadarsko.avif">
+                <h3>Kayaking on Skadar Lake</h3>
+                <p>This tour is escape into peaceful area with beautiful nature
+                    and diverse birdlife. You have a chance to see small fishing villages,
+                    floating water lilies and views of surrounding mountains.
+                </p>
             </div>
 
             <div class="card">
-                <img src="images/water2.jpg">
-                <h3>Budva Beaches</h3>
-                <p>Relax or enjoy jet skiing and paddleboarding.</p>
+                <img src="activities/rafting.jpg">
+                <h3>Rafting on Tara River</h3>
+                <p>The Tara River, often called the “Tear of Europe,” is famous for its crystal-clear waters and breathtaking scenery. 
+                    If you’re looking for an adrenaline boost, you should definitely try a rafting tour through this stunning,
+                     untouched natural environment.</p>
             </div>
 
+            <div class="card">
+                <img src="activities/nevidio.jpg">
+                <h3>Nevidio Canyoning</h3>
+                <p>Known as one of the last discovered canyons in Europe, Nevidio offers a mix of narrow passages, waterfalls, 
+                    and natural pools hidden deep within untouched nature. 
+                    As you move through it—you’ll experience an unforgettable  raw beauty.</p>
+            </div>
+
+            <div class="card">
+                <img src="activities/spilja.jpg">
+                <h3>Blue Cave</h3>
+                <p>Famous for its glowing turquoise-blue water, Blue Cave creates a magical atmosphere when sunlight reflects through the sea entrance.
+                     Visitors can enter the cave by boat and swim in its crystal-clear waters,
+                      making it a truly unforgettable experience.</p>
+            </div>
         </div>
+        <button class="scroll-btn down" id="waterScroll" onclick="scrollNext('water')">
+            <span>&#8595;</span>
+        </button>
     </section>
-    <section class="category">
+    <section class="category" id="history">
         <h2>History & Culture</h2>
         <div class="cards">
 
             <div class="card">
-                <img src="images/culture1.jpg">
-                <h3>Old Town Kotor</h3>
-                <p>Medieval streets, churches, and UNESCO heritage.</p>
+                <img src="activities/kotor.avif">
+                <h3>Kotor Old Town Walking Tour</h3>
+                <p>Explore medieval streets, hidden squares and city walls while learning about UNESCO-protected history and Venetian heritage.</p>
             </div>
 
             <div class="card">
-                <img src="images/culture2.jpg">
-                <h3>Cetinje</h3>
-                <p>The historic capital full of museums and history.</p>
+                <img src="activities/Ostrog.webp">
+                <h3>Ostrog Monastery Visit</h3>
+                <p>A cultural and spiritual experience visiting one of the most important monasteries in the Balkans, built into a dramatic cliff.</p>
+            </div>
+
+            <div class="card">
+                <img src="activities/perast.jpg">
+                <h3>Perast Boat Tour</h3>
+                <p>Take a scenic boat ride to the island church of Our Lady of the Rocks and discover baroque coastal architecture.</p>
+            </div>
+
+            <div class="card">
+                <img src="activities/stariBar.jpg">
+                <h3>Old Bar Heritage Walk</h3>
+                <p>Walk through ancient ruins of Stari Bar and explore layers of Ottoman, Venetian, and medieval history with a guide.</p>
             </div>
 
         </div>
-    </section>
-    <section class="category">
-        <h2>Food & Lifestyle</h2>
-        <div class="cards">
-
-            <div class="card">
-                <img src="images/food1.jpg">
-                <h3>Local Cuisine</h3>
-                <p>Try seafood, Njeguški pršut and traditional dishes.</p>
-            </div>
-
-            <div class="card">
-                <img src="images/food2.jpg">
-                <h3>Wine & Sunset Spots</h3>
-                <p>Enjoy local wines with breathtaking views.</p>
-            </div>
-
-        </div>
+        <button class="scroll-btn up" id="historyScroll" onclick="scrollNext('history')">
+            <span>&#8593;</span>
+        </button>
     </section>
         <script src="header.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
