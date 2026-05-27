@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #030369, #0505a8);
+}
+.auth-page{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.auth-container {
+    width: 900px;
+    height: 520px;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    background: white;
+}
+.auth-left {
+    flex: 1;
+    background: linear-gradient(180deg, #030369, #0505a8,0.3);
+    background-image: url("sl.webp");
+    background-size: cover;
+    background-position-x: center;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+.auth-left h1, .auth-left p{
+    transform: translateY(-170px);
+}
+.auth-left h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #030369;
+}
+.auth-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+    color: #030369;
+    font-weight: bold;
+}
+.auth-right {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-right h2 {
+    color: #030369;
+    margin-bottom: 30px;
+}
+.auth-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.auth-right input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+.auth-right input:focus {
+    border-color: #030369;
+}
+.auth-right button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 999px;
+    background: #030369;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.auth-right button:hover {
+    background: #0505a8;
+}
+.auth-right p {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+}
+.auth-right a {
+    color: #030369;
+    font-weight: 600;
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    gap: 10px;
+}
+.row input {
+    width: 100%;
+}
+.label {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: -6px;
+    color: #555;
+}
+.password-field {
+    position: relative;
+    width: 100%;
+}
+.password-field input {
+    width: 100%;
+    padding-right: 40px;
+}
+.toggle-eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    opacity: 0.6;
+}
+.eye, #showEye, #hideEye{
+    display: flex;
+    align-items: center;
+}
+.toggle-eye:hover {
+    opacity: 1;
+}
+.forgot {
+    font-size: 12px;
+    color: #030369;
+    text-decoration: none;
+    margin-top: 4px;
+    display: inline-block;
+}
+.forgot:hover {
+    text-decoration: underline;
+}

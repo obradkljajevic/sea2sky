@@ -121,19 +121,25 @@ function lbNav(dir) {
   renderLightbox();
 }
 
+const lightbox = document.getElementById('lightbox');
+
 // Keyboard navigation for images
 
 document.addEventListener('keydown', e => {
-  if (!document.getElementById('lightbox').classList.contains('active')) return;
+  if (!lightbox) return;
+  if (!lightbox.classList.contains('active')) return;
+
   if (e.key === 'ArrowRight') lbNav(1);
   if (e.key === 'ArrowLeft')  lbNav(-1);
   if (e.key === 'Escape')     closeLightbox();
 });
 
 // Close on backdrop click
-document.getElementById('lightbox').addEventListener('click', e => {
-  if (e.target === document.getElementById('lightbox')) closeLightbox();
-});
+if (lightbox) {
+    lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) closeLightbox();
+    });
+}
 
 // Scroll-reveal
 const observer = new IntersectionObserver(entries => {
@@ -141,3 +147,63 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.park-section').forEach(s => observer.observe(s));
+
+//password logic
+//hide and show password
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    function setupToggle(toggleId, inputId, showId, hideId) {
+        const toggle = document.getElementById(toggleId);
+        const input = document.getElementById(inputId);
+        const show = document.getElementById(showId);
+        const hide = document.getElementById(hideId);
+
+        if (!toggle || !input || !show || !hide) return;
+
+        toggle.addEventListener("click", () => {
+            const isPassword = input.type === "password";
+
+            input.type = isPassword ? "text" : "password";
+            show.style.display = isPassword ? "none" : "flex";
+            hide.style.display = isPassword ? "flex" : "none";
+        });
+    }
+
+    setupToggle("togglePassword", "passwordLogin", "showEye", "hideEye");
+    setupToggle("togglePassword2", "passwordRegister", "showEye2", "hideEye2");
+    setupToggle("togglePassword3", "passwordRegister2", "showEye3", "hideEye3");
+
+    //checking is password valid
+    
+    function isValidPassword(password) {
+      const hasUpper = /[A-Z]/.test(password);
+      const hasNumber = /\d/.test(password);
+      const hasSpecial = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+      const longEnough = password.length >= 8;
+
+      return hasUpper && hasNumber && hasSpecial && longEnough;
+    }
+
+    const form = document.querySelector("form");
+
+    form?.addEventListener("submit", (e) => {
+      const pw1 = document.getElementById("passwordRegister")?.value;
+      const pw2 = document.getElementById("passwordRegister2")?.value;
+
+      if (!pw1 || !pw2) return;
+
+      if (pw1 !== pw2) {
+          e.preventDefault();
+          alert("Passwords do not match!");
+          return;
+      }
+
+      if (!isValidPassword(pw1)) {
+          e.preventDefault();
+          alert("Password must have 8 or more characters, 1 uppercase, 1 number, 1 special character!");
+          return;
+      }
+    });
+});
