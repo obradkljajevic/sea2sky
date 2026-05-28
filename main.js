@@ -39,56 +39,20 @@ function scrollNext(currentId) {
     }
 }
 
-//Pictures and caption for every park
+//Pictures and caption for every national park
 
-const galleries = {
-  durmitor: {
-    name: "National Park Durmitor",
-    images: [
-      { src: "parks/d1.webp", caption: "Durmitor peaks" },
-      { src: "parks/d2.jpg", caption: "Black Lake" },
-      { src: "parks/d3.webp", caption: "Tara Canyon" },
-    ]
-  },
-  biogradska: {
-    name: "Biogradska Gora",
-    images: [
-      { src: "parks/b1.jpg", caption: "Biogradsko Lake" },
-      { src: "parks/b2.jpg", caption: "500-year-old beech canopy" },
-      { src: "parks/b3.jpg", caption: "Forest trail — Bjelasica" },
-    ]
-  },
-  lovcen: {
-    name: "Lovćen",
-    images: [
-      { src: "parks/l1.jpg", caption: "View toward Bay of Kotor" },
-      { src: "parks/l2.webp", caption: "Lovćen above the clouds" },
-      { src: "parks/l3.jpg", caption: "Hills" },
-    ]
-  },
-  skadar: {
-    name: "Skadarsko Lake",
-    images: [
-      { src: "parks/s1.jpg", caption: "Water lilies" },
-      { src: "parks/s2.jpg", caption: "Fishing villages" },
-      { src: "parks/s3.webp", caption: "Pelicans" },
-    ]
-  },
-  prokletije: {
-    name: "Prokletije",
-    images: [
-      { src: "parks/p1.webp", caption: "Peaks" },
-      { src: "parks/p2.jpg", caption: "Hiking tour"},
-      { src: "parks/p3.jpg", caption: "Villages"},
-    ]
-  }
-};
+fetch('galleries.json')
+  .then(r => r.json())
+  .then(data => {
+    galleries = data.galleries;
+  });
+
 
 let currentGallery = null;
 let currentIdx = 0;
 
-function openGallery(id, idx = 0) {
-  currentGallery = galleries[id];
+function openGallery(category,id, idx = 0) {
+  currentGallery = galleries[category][id];
   currentIdx = idx;
   renderLightbox();
   document.getElementById('lightbox').classList.add('active');

@@ -1,0 +1,113 @@
+{
+  "galleries": {
+    "parks": {
+      "durmitor": {
+        "name": "National Park Durmitor",
+        "images": [
+          { "src": "parks/d1.webp", "caption": "Durmitor peaks" },
+          { "src": "parks/d2.jpg", "caption": "Black Lake" },
+          { "src": "parks/d3.webp", "caption": "Tara Canyon" }
+        ]
+      },
+      "biogradska": {
+        "name": "Biogradska Gora",
+        "images": [
+          { "src": "parks/b1.jpg", "caption": "Biogradsko Lake" },
+          { "src": "parks/b2.jpg", "caption": "500-year-old beech canopy" },
+          { "src": "parks/b3.jpg", "caption": "Forest trail — Bjelasica" }
+        ]
+      },
+      "lovcen": {
+        "name": "Lovćen",
+        "images": [
+          { "src": "parks/l1.jpg", "caption": "View toward Bay of Kotor" },
+          { "src": "parks/l2.webp", "caption": "Lovćen above the clouds" },
+          { "src": "parks/l3.jpg", "caption": "Hills" }
+        ]
+      },
+      "skadar": {
+        "name": "Skadarsko Lake",
+        "images": [
+          { "src": "parks/s1.jpg", "caption": "Water lilies" },
+          { "src": "parks/s2.jpg", "caption": "Fishing villages" },
+          { "src": "parks/s3.webp", "caption": "Pelicans" }
+        ]
+      },
+      "prokletije": {
+        "name": "Prokletije",
+        "images": [
+          { "src": "parks/p1.webp", "caption": "Peaks" },
+          { "src": "parks/p2.jpg", "caption": "Hiking tour" },
+          { "src": "parks/p3.jpg", "caption": "Villages" }
+        ]
+      }
+    },
+
+    "mountains": {
+      "durmitor": {
+        "name": "Durmitor",
+        "images": [
+          { "src": "mountains/m1.jpg", "caption": "Covered in snow" },
+          { "src": "mountains/m2.jpg", "caption": "Cottage on Durmitor" },
+          { "src": "mountains/m3.jpg", "caption": "View" }
+        ]
+      },
+      "bjelasica": {
+        "name": "Bjelasica",
+        "images": [
+          { "src": "mountains/m4.jpg", "caption": "View" },
+          { "src": "mountains/m7.jpg", "caption": "Covered in snow" },
+          { "src": "mountains/m6.jpg", "caption": "Lake" }
+        ]
+      },
+      "komovi": {
+        "name": "Komovi",
+        "images": [
+          { "src": "mountains/m5.webp", "caption": "Covered in snow" },
+          { "src": "mountains/m8.jpg", "caption": "Hiking" },
+          { "src": "mountains/m9.jpg", "caption": "View" }
+        ]
+      },
+      "prokletije": {
+        "name": "Prokletije & Visitor",
+        "images": [
+          { "src": "mountains/m10.webp", "caption": "Peaks" },
+          { "src": "mountains/m11.jpg", "caption": "Hiking" },
+          { "src": "mountains/m12.jpg", "caption": "National Park" }
+        ]
+      },
+      "orjen": {
+        "name": "Orjen",
+        "images": [
+          { "src": "mountains/m13.jpg", "caption": "Hiking" },
+          { "src": "mountains/m14.webp", "caption": "View from Orjen" },
+          { "src": "mountains/m15.jpg", "caption": "Kabao peak" }
+        ]
+      },
+      "lovcen": {
+        "name": "Lovćen",
+        "images": [
+          { "src": "mountains/m16.jpg", "caption": "Mountain" },
+          { "src": "mountains/m17.jpg", "caption": "Covered in snow" },
+          { "src": "mountains/m18.jpg", "caption": "View at Kotor Bay" }
+        ]
+      },
+      "sinjajevina": {
+        "name": "Sinjajevina",
+        "images": [
+          { "src": "mountains/m19.webp", "caption": "Mountain" },
+          { "src": "mountains/m20.jpg", "caption": "Cottage" },
+          { "src": "mountains/m21.webp", "caption": "Pure Nature" }
+        ]
+      },
+      "hajla": {
+        "name": "Hajla",
+        "images": [
+          { "src": "mountains/m24.jpg", "caption": "Cottages" },
+          { "src": "mountains/m22.jpg", "caption": "Skiing" },
+          { "src": "mountains/m23.jpg", "caption": "Hiking" }
+        ]
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
     font-size: 18px;
     font-weight:600;
     color: white;
+    background: none;
 }
 #header-left{
     margin-left: 100px;
@@ -25,7 +26,7 @@
     gap:40px;
 }
 #logo-header{
-    height: 60px;
+    height: 50px;
     width: auto;
 }
 .nav{
@@ -56,31 +57,43 @@
 }
 .buttons button{
     font-size: 18px;
-    height: 40px;
-    width: 80px;
-    border-radius: 5px;
     font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
     border: 0;
+    box-sizing: border-box;
 }
 .buttons button:hover{
     animation: bounce 1.5s infinite;
 }
-#register{
-    background-color: rgb(3, 3, 105);
+#register {
+    background-color: #030369;
     color: white;
+    border:2px solid rgba(255,255,255,0.7);
+}
+#register:hover {
+    background-color: #0505a8;
 }
 #login{
-    background-color: white;
-    color: rgb(3, 3, 105);
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.7);
+}
+#login:hover {
+    background: white;
+    color: #030369;
+    border-color: white;
 }
 #first{
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 120px);
-    transition: background-image 1s ease-in-out;
+    transition: background-image 2s ease-in-out;
     background-position: center center;
     display: flex;
+    gap:40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -101,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 .search-bar {
     display: flex;
@@ -127,6 +140,7 @@
     font-weight: 700;
     color: #1a2a5e;
     text-transform: uppercase;
+    text-align: left;
 }
 .search-bar input,
 .search-bar select {
@@ -136,6 +150,10 @@
     color: #888;
     background: transparent;
     width: 100%;
+}
+.search-bar select{
+    width: 120px;
+    text-align: left;
 }
 .search-btn {
     background: #030369;
@@ -187,7 +205,7 @@
     color: rgba(0, 10, 40);
 }
 .act-body{
-    background-color: #030369;
+    background-color: rgba(3, 3, 105, 0.93);
 }
 .category {
     padding: 60px 80px 80px;
@@ -196,8 +214,6 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
-#hiking{
     height: calc(100% - 80px);
 }
 #water, #history{
@@ -245,7 +261,7 @@
 .scroll-btn{
     background: none;
     border: none;
-    font-size: 60px;
+    font-size: 80px;
     color: rgba(255,255,255,0.7);
     cursor: pointer;
     animation: bounce 1.5s infinite;
@@ -258,15 +274,22 @@
 .category + .category {
     margin-top: 40px;
 }
+#parks-hero{
+    background-image:
+        linear-gradient(to bottom, rgba(3,3,105,0.35) 0%, rgba(3,3,105,0.65) 100%),
+        url('parks.webp');
+}
+#mountain-hero{
+    background-image:
+        linear-gradient(to bottom, rgba(3,3,105,0.35) 0%, rgba(3,3,105,0.65) 70%),
+        url('pozadina2.jpg');
+}
 .parks-hero {
     position: relative;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 120px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image:
-        linear-gradient(to bottom, rgba(3,3,105,0.35) 0%, rgba(3,3,105,0.65) 70%),
-        url('parks.webp');
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

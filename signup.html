@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="SeaToSky.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="signup-body">
+    <div id="header-placeholder"></div>
+    <div class="auth-page">
+        <div class="auth-container2">
+            <div class="auth-left">
+                <h1>Sea2Sky</h1>
+                <p>Explore Montenegro like never before. Create your account and start your journey.</p>
+            </div>
+            <div class="auth-right">
+                <h2>Create account</h2>
+                <form>
+                    <div class="row">
+                        <input type="text" placeholder="First name" id="firstName">
+                        <input type="text" placeholder="Last name" id="lastName">
+                    </div>
+                    <input type="email" placeholder="Email" id="emailRegister">
+                    <div class="password-field">
+                        <input type="password" placeholder="Password" id="passwordRegister">
+                        <span class="toggle-eye" id="togglePassword2">
+                            <span class="eye" id="showEye2"><img src="show.svg"></span>
+                            <span class="eye" id="hideEye2" style="display:none;"><img src="hide.svg"></span>
+                        </span>
+                    </div>
+                    <div class="password-field">
+                        <input type="password" placeholder="Confirm Password" id="passwordRegister2">
+                        <span class="toggle-eye" id="togglePassword3">
+                            <span class="eye" id="showEye3"><img src="show.svg"></span>
+                            <span class="eye" id="hideEye3" style="display:none;"><img src="hide.svg"></span>
+                        </span>
+                    </div>
+                    <button type="submit">Sign up</button>
+                    <p>
+                        Already have an account?
+                        <a href="signin.html">Sign in</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="header.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
