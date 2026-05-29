@@ -6,207 +6,55 @@
   <title>National Parks — Sea2Sky</title>
   <link rel="stylesheet" href="SeaToSky.css"/>
 </head>
-<body>
-<section class="parks-hero" id="parks-hero">
-  <nav class="parks-nav">
-    <a href="SeaToSky.html"><img class="logoSea" src="sea2sky.png"></a>
-    <a href="SeaToSky.html" class="nav-back">← Back </a>
-  </nav>
-  <p class="hero-eyebrow">Destinations &nbsp;/&nbsp; National Parks</p>
-  <h1 class="hero-title">Montenegro's <em>wild</em> heart.</h1>
-  <p class="hero-sub">Five national parks cover nearly 8% of Montenegro's territory — from glacial peaks and ancient rainforests to the Balkans' largest lake. This is nature at its most unhurried.</p>
-  <div class="hero-scroll"><span></span> Scroll to explore</div>
-</section>
 
-<div class="count-strip">
-  <div><strong>5</strong> National Parks</div>
-  <div><strong>~8%</strong> of Montenegro</div>
-  <div><strong>2</strong> UNESCO Sites</div>
-</div>
+<body data-page="parks">
+  <section class="parks-hero" id="parks-hero">
+    <nav class="parks-nav">
+      <a href="SeaToSky.html">
+        <img class="logoSea" src="sea2sky.png">
+      </a>
+      <a href="SeaToSky.html" class="nav-back">← Back</a>
+    </nav>
 
-<section class="park-section" id="durmitor">
-  <div class="park-info">
-    <div class="park-number">01</div>
-    <h2 class="park-name">Durmitor</h2>
-    <p class="park-desc">A UNESCO World Heritage massif that rises above the town of Žabljak, Durmitor is Montenegro's most dramatic landscape. Eighteen glacial lakes — the deepest of which, Black Lake, mirrors the surrounding pines and limestone cliffs — dot a plateau carved by ice over millennia. The Tara River Canyon, the second deepest in the world, cuts along its edge like a wound in the earth. In winter it's a ski resort; in summer, a kingdom for hikers, rafters, and anyone willing to stand at 2,523 m on Bobotov Kuk and feel genuinely small.</p>
-    <div class="park-facts">
-      <div class="fact"><span class="fact-label">Area</span><span class="fact-value">390 km²</span></div>
-      <div class="fact"><span class="fact-label">Highest peak</span><span class="fact-value">2,523 m</span></div>
-      <div class="fact"><span class="fact-label">UNESCO</span><span class="fact-value">1980</span></div>
-      <div class="fact"><span class="fact-label">Glacial lakes</span><span class="fact-value">18</span></div>
-    </div>
-    <button class="gallery-btn" onclick="openGallery('parks','durmitor')">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4-4 4 4 4-8 4 8"/><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/></svg>
-      View all photos
-    </button>
-  </div>
-  <div class="park-gallery-col">
-    <div class="thumb-grid">
-      <div class="thumb" onclick="openGallery('parks','durmitor', 0)">
-        <img src="parks/d1.webp" alt="Durmitor"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="32" height="32" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','durmitor', 1)">
-        <img src="parks/d2.jpg" alt="Durmitor peaks"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','durmitor', 2)">
-        <img src="parks/d3.webp" alt="Tara canyon"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <p class="hero-eyebrow">Destinations &nbsp;/&nbsp; National Parks</p>
+    <h1 class="hero-title">Montenegro's <em>wild</em> heart.</h1>
+    <p class="hero-sub">
+      Five national parks cover nearly 8% of Montenegro's territory — from glacial peaks and ancient rainforests to the Balkans' largest lake.
+    </p>
 
-<section class="park-section" id="biogradska">
-  <div class="park-info">
-    <div class="park-number">02</div>
-    <h2 class="park-name">Biogradska Gora</h2>
-    <p class="park-desc">Tucked between the Tara and Lim rivers in the heart of the Bjelasica mountains, Biogradska Gora protects one of the last three primeval rainforests in Europe — some trees here are over 500 years old and have never felt an axe. At the centre of it all sits Biogradsko Lake, a glacial mirror fringed by beech, spruce, and fir. The park was first protected in 1878, declared a royal reserve as a gift to King Nikola — and the silence inside it still feels like something reserved for kings.</p>
-    <div class="park-facts">
-      <div class="fact"><span class="fact-label">Area</span><span class="fact-value">54 km²</span></div>
-      <div class="fact"><span class="fact-label">Rainforest</span><span class="fact-value">1,600 ha</span></div>
-      <div class="fact"><span class="fact-label">Est.</span><span class="fact-value">1952</span></div>
-      <div class="fact"><span class="fact-label">Highest peak</span><span class="fact-value">2,139 m</span></div>
-    </div>
-    <button class="gallery-btn" onclick="openGallery('parks','biogradska')">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4-4 4 4 4-8 4 8"/><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/></svg>
-      View all photos
-    </button>
-  </div>
-  <div class="park-gallery-col">
-    <div class="thumb-grid">
-      <div class="thumb" onclick="openGallery('parks','biogradska', 0)">
-        <img src="parks/b1.jpg" alt="Biogradska gora"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="32" height="32" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','biogradska', 1)">
-        <img src="parks/b2.jpg" alt="Ancient trees"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','biogradska', 2)">
-        <img src="parks/b3.jpg" alt="Forest path"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="hero-scroll"><span></span> Scroll to explore</div>
+  </section>
 
-<section class="park-section" id="lovcen">
-  <div class="park-info">
-    <div class="park-number">03</div>
-    <h2 class="park-name">Lovćen</h2>
-    <p class="park-desc">Lovćen is Montenegro's spiritual mountain — the "Black Mountain" that gave the country its very name. Rising sharply above the Bay of Kotor, its rocky slopes have been the historical stronghold of Montenegrin identity for centuries, a fortress of resistance against Ottoman rule. At the summit of Jezerski Vrh (1,657 m), reached by 461 carved stone steps, stands the mausoleum of Petar II Petrović-Njegoš — philosopher, poet, and bishop — one of the most stirring monuments in the entire Balkans. The views from the top stretch across the Adriatic to Italy on a clear day.</p>
-    <div class="park-facts">
-      <div class="fact"><span class="fact-label">Area</span><span class="fact-value">64 km²</span></div>
-      <div class="fact"><span class="fact-label">Highest peak</span><span class="fact-value">1,749 m</span></div>
-      <div class="fact"><span class="fact-label">Est.</span><span class="fact-value">1952</span></div>
-      <div class="fact"><span class="fact-label">Steps to mausoleum</span><span class="fact-value">461</span></div>
-    </div>
-    <button class="gallery-btn" onclick="openGallery('parks','lovcen')">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4-4 4 4 4-8 4 8"/><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/></svg>
-      View all photos
-    </button>
+  <!-- COUNT STRIP (STATIC FOR NOW) -->
+  <div class="count-strip">
+    <div><strong>5</strong> National Parks</div>
+    <div><strong>~8%</strong> of Montenegro</div>
+    <div><strong>2</strong> UNESCO Sites</div>
   </div>
-  <div class="park-gallery-col">
-    <div class="thumb-grid">
-      <div class="thumb" onclick="openGallery('parks','lovcen', 0)">
-        <img src="parks/l1.jpg" alt="Lovćen"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="32" height="32" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','lovcen', 1)">
-        <img src="parks/l2.webp" alt="Mountain view"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','lovcen', 2)">
-        <img src="parks/l3.jpg" alt="Bay of Kotor view"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="park-section" id="skadar">
-  <div class="park-info">
-    <div class="park-number">04</div>
-    <h2 class="park-name">Skadar Lake</h2>
-    <p class="park-desc">The largest lake in the Balkans stretches across the border between Montenegro and Albania, its surface shifting with the seasons — vast and silver in winter, carpeted in white and yellow water lilies come summer. The lake shelters 281 recorded bird species, making it one of Europe's most important ornithological reserves; Dalmatian pelicans nest here in one of their last European strongholds. Wooden fishing boats drift between half-submerged monasteries and fortresses that rise straight from the water. It's a world that moves slowly and on its own terms.</p>
-    <div class="park-facts">
-      <div class="fact"><span class="fact-label">Lake area</span><span class="fact-value">391 km²</span></div>
-      <div class="fact"><span class="fact-label">Bird species</span><span class="fact-value">281</span></div>
-      <div class="fact"><span class="fact-label">Est.</span><span class="fact-value">1983</span></div>
-      <div class="fact"><span class="fact-label">Fish species</span><span class="fact-value">48</span></div>
-    </div>
-    <button class="gallery-btn" onclick="openGallery('parks','skadar')">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4-4 4 4 4-8 4 8"/><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/></svg>
-      View all photos
-    </button>
-  </div>
-  <div class="park-gallery-col">
-    <div class="thumb-grid">
-      <div class="thumb" onclick="openGallery('parks','skadar', 0)">
-        <img src="parks/s1.jpg" alt="Skadar Lake"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="32" height="32" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','skadar', 1)">
-        <img src="parks/s2.jpg" alt="Water reflections"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','skadar', 2)">
-        <img src="parks/s3.webp" alt="Lake birds"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section> 
+  <!-- 🔥 RENDER TARGET -->
+  <div id="dynamic-content"></div>
 
-<section class="park-section" id="prokletije">
-  <div class="park-info">
-    <div class="park-number">05</div>
-    <h2 class="park-name">Prokletije</h2>
-    <p class="park-desc">The Prokletije, also known as the Accursed Mountains, are one of the most dramatic and rugged mountain ranges in Southeastern Europe. 
-        They form part of the Dinaric Alps and are characterized by sharp limestone peaks, deep valleys, and remote alpine landscapes that remain among the least explored areas in the region.
-        The mountains are known for their extreme relief, with some peaks rising abruptly from narrow valleys, giving the area an almost untouched and wild appearance. Dense forests, glacial lakes, and fast mountain rivers add to its natural beauty and ecological importance.</p>
-    <div class="park-facts">
-      <div class="fact"><span class="fact-label">Highest peak</span><span class="fact-value">2,534 m</span></div>
-      <div class="fact"><span class="fact-label">Area</span><span class="fact-value">166 km²</span></div>
-      <div class="fact"><span class="fact-label">Est.</span><span class="fact-value">2009</span></div>
-      <div class="fact"><span class="fact-label">Mammal species</span><span class="fact-value">50+</span></div>
-    </div>
-    <button class="gallery-btn" onclick="openGallery('parks','prokletije')">
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4-4 4 4 4-8 4 8"/><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/></svg>
-      View all photos
-    </button>
-  </div>
-  <div class="park-gallery-col">
-    <div class="thumb-grid">
-      <div class="thumb" onclick="openGallery('parks','prokletije', 0)">
-        <img src="parks/p1.webp" alt="Prokletije peaks"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="32" height="32" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','prokletije', 1)">
-        <img src="parks/p2.jpg" alt="Hiking"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-      <div class="thumb" onclick="openGallery('parks','prokletije', 2)">
-        <img src="parks/p3.jpg" alt="Village"/>
-        <div class="thumb-overlay"><svg fill="none" stroke="currentColor" width="28" height="28" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- FOOTER (STATIC) -->
+  <footer class="parks-footer">
+    © 2026 Sea2Sky — All rights reserved
+  </footer>
 
-<footer class="parks-footer">© 2026 Sea2Sky — All rights reserved</footer>
+  <!-- LIGHTBOX (STATIC) -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <button class="lb-prev" onclick="lbNav(-1)">←</button>
+    <button class="lb-next" onclick="lbNav(1)">→</button>
 
-<div class="lightbox" id="lightbox">
-  <button class="lb-close" onclick="closeLightbox()">✕</button>
-  <button class="lb-prev" onclick="lbNav(-1)">&#8592;</button>
-  <button class="lb-next" onclick="lbNav(1)">&#8594;</button>
-  <div class="lb-img-wrap"><img id="lb-image" src="" alt=""/></div>
-  <p class="lb-caption" id="lb-caption"></p>
-  <div class="lb-dots" id="lb-dots"></div>
-</div>
-<script src="header.js"></script>
-<script src="main.js" defer></script>
+    <div class="lb-img-wrap">
+      <img id="lb-image" src="" alt=""/>
+    </div>
+
+    <p class="lb-caption" id="lb-caption"></p>
+    <div class="lb-dots" id="lb-dots"></div>
+  </div>
+
+  <script src="main.js" defer></script>
+
 </body>
 </html>

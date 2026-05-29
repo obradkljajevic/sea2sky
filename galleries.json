@@ -1,113 +1,313 @@
 {
   "galleries": {
-    "parks": {
-      "durmitor": {
-        "name": "National Park Durmitor",
+    "parks": [
+      {
+        "id": "durmitor",
+        "number": "01",
+        "name": "Durmitor",
+        "desc": "Durmitor is a mountain and national park in Montenegro, part of the historic region of Old Herzegovina. Its highest peak, Bobotov Kuk, rises to 2,522 meters. The massif is known for its 18 glacial “mountain eyes” lakes located above 1,500 meters, with Black Lake being the most famous. In 1980, Durmitor was inscribed as a UNESCO World Heritage Site for its natural value. The Tara River canyon, also within the area, was earlier recognized in 1977 under UNESCO’s “Man and the Biosphere” program as an important ecological reserve.",
+        "facts": [
+          { "label": "Area", "value": "390 km²" },
+          { "label": "Highest peak", "value": "2,523 m" },
+          { "label": "Established", "value": "1952" },
+          { "label": "Glacial lakes", "value": "18" }
+        ],
         "images": [
           { "src": "parks/d1.webp", "caption": "Durmitor peaks" },
           { "src": "parks/d2.jpg", "caption": "Black Lake" },
           { "src": "parks/d3.webp", "caption": "Tara Canyon" }
         ]
       },
-      "biogradska": {
+      {
+        "id": "biogradska",
+        "number": "02",
         "name": "Biogradska Gora",
+        "desc": "Biogradska Gora National Park is located in northeastern Montenegro, between the Tara and Lim rivers, in the central part of the Bjelasica mountain. Its most important natural feature is the Biogradska Gora rainforest, covering around 1,600 hectares, and is one of the last three remaining primeval forests of its kind in Europe, protected as a strict nature reserve. At the heart of this ancient forest lies Biogradsko Lake, adding to the park’s exceptional natural beauty.",
+        "facts": [
+          { "label": "Area", "value": "54 km²" },
+          { "label": "Rainforest", "value": "1,600 ha" },
+          { "label": "Established", "value": "1952" },
+          { "label": "Highest peak", "value": "2,139 m" }
+        ],
         "images": [
           { "src": "parks/b1.jpg", "caption": "Biogradsko Lake" },
-          { "src": "parks/b2.jpg", "caption": "500-year-old beech canopy" },
-          { "src": "parks/b3.jpg", "caption": "Forest trail — Bjelasica" }
+          { "src": "parks/b2.jpg", "caption": "Ancient beech forest" },
+          { "src": "parks/b3.jpg", "caption": "Forest trails in Bjelasica" }
         ]
       },
-      "lovcen": {
+      {
+        "id": "lovcen",
+        "number": "03",
         "name": "Lovćen",
+        "desc": "Lovćen National Park is located in Montenegro, a Mediterranean country in southeastern Europe. It covers the central and highest parts of the Lovćen mountain massif, positioned at the meeting point of two distinct natural regions — the sea and the continent. Because of this unique location, Lovćen is influenced by both Mediterranean and continental climates, which has led to the development of rich and diverse ecosystems.",
+        "facts": [
+          { "label": "Area", "value": "64 km²" },
+          { "label": "Highest peak", "value": "1,749 m" },
+          { "label": "Established", "value": "1952" },
+          { "label": "Steps", "value": "461" }
+        ],
         "images": [
           { "src": "parks/l1.jpg", "caption": "View toward Bay of Kotor" },
           { "src": "parks/l2.webp", "caption": "Lovćen above the clouds" },
-          { "src": "parks/l3.jpg", "caption": "Hills" }
+          { "src": "parks/l3.jpg", "caption": "Mountain landscapes" }
         ]
       },
-      "skadar": {
-        "name": "Skadarsko Lake",
+      {
+        "id": "skadar",
+        "number": "04",
+        "name": "Skadar Lake",
+        "desc": "Skadar Lake National Park is located on the border between Montenegro and Albania, with Montenegro covering about two-thirds of the lake. The lake is a cryptodepression, meaning that parts of its bed lie below sea level, creating unique underwater springs known as “sub-lacustrine eyes,” of which there are around 30. The deepest of these, Radus, reaches depths of up to 60 meters, while the lake’s average depth is about 6 meters. Its shoreline is highly indented, featuring numerous bays, peninsulas, and capes, mostly marshy and covered with dense reed vegetation. The area is also rich in diverse plant life and natural ecosystems.",
+        "facts": [
+          { "label": "Lake area", "value": "391 km²" },
+          { "label": "Bird species", "value": "281" },
+          { "label": "Fish species", "value": "48" },
+          { "label": "Established", "value": "1983" }
+        ],
         "images": [
           { "src": "parks/s1.jpg", "caption": "Water lilies" },
           { "src": "parks/s2.jpg", "caption": "Fishing villages" },
           { "src": "parks/s3.webp", "caption": "Pelicans" }
         ]
       },
-      "prokletije": {
+      {
+        "id": "prokletije",
+        "number": "05",
         "name": "Prokletije",
+        "desc": "Prokletije National Park is the fifth national park in Montenegro, established in 2009. It covers an area of 16,630 hectares and includes two nature reserves: Hridsko Lake and Volušnica. The park is characterized by limestone and dolomite rock formations dating back to the Oligocene–Miocene period. Its landscape is highly rugged and inaccessible, featuring numerous high peaks and typical karst formations such as sinkholes, caves, and valleys. The mountain summits are sharp and jagged, while the slopes are extremely steep, giving the area its wild and dramatic appearance.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,534 m" },
+          { "label": "Area", "value": "166 km²" },
+          { "label": "Established", "value": "2009" },
+          { "label": "Wildlife", "value": "50+ mammal species" }
+        ],
         "images": [
           { "src": "parks/p1.webp", "caption": "Peaks" },
-          { "src": "parks/p2.jpg", "caption": "Hiking tour" },
-          { "src": "parks/p3.jpg", "caption": "Villages" }
+          { "src": "parks/p2.jpg", "caption": "Hiking trails" },
+          { "src": "parks/p3.jpg", "caption": "Traditional villages" }
         ]
       }
-    },
+    ],
 
-    "mountains": {
-      "durmitor": {
+    "mountains": [
+      {
+        "id": "durmitor",
+        "number": "01",
         "name": "Durmitor",
+        "desc": "Durmitor Mountain is a striking high-mountain massif in northern Montenegro, known for its deep canyons, glacial lakes, and rich biodiversity, making it a top destination for adventurers and nature lovers in the heart of Europe. In some areas, forests of black pine are over 400 years old, with trees rising more than 50 meters high.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,523 m" },
+          { "label": "Base town", "value": "Žabljak" },
+          { "label": "Glacial lakes", "value": "18" }
+        ],
         "images": [
           { "src": "mountains/m1.jpg", "caption": "Covered in snow" },
           { "src": "mountains/m2.jpg", "caption": "Cottage on Durmitor" },
           { "src": "mountains/m3.jpg", "caption": "View" }
         ]
       },
-      "bjelasica": {
+      {
+        "id": "bjelasica",
+        "number": "02",
         "name": "Bjelasica",
+        "desc": "Bjelasica is a mountain in Montenegro, located in the eastern, central-continental part of the country. It is known for three key characteristics: easy accessibility even to its highest peaks, rich forest coverage, and an abundance of flowing waters. Unlike most mountains in the region, Bjelasica has volcanic origins, which gives it its distinctive landscape. This also explains its “green summers and white winters,” a defining feature of the mountain throughout the year.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,139 m" },
+          { "label": "Base town", "value": "Kolašin" }
+        ],
         "images": [
           { "src": "mountains/m4.jpg", "caption": "View" },
-          { "src": "mountains/m7.jpg", "caption": "Covered in snow" },
-          { "src": "mountains/m6.jpg", "caption": "Lake" }
+          { "src": "mountains/m7.jpg", "caption": "Snow landscapes" },
+          { "src": "mountains/m6.jpg", "caption": "Mountain lake" }
         ]
       },
-      "komovi": {
+      {
+        "id": "komovi",
+        "number": "03",
         "name": "Komovi",
+        "desc": "The Komovi mountain range is located in eastern Montenegro, between the Lim, Tara, and Drcka rivers, surrounded by Bjelasica to the north, Žijevo to the south, and Visitor to the east. It is characterized by a rich and diverse plant life, which is why this mountain massif has been recognized as a potential IPA (Important Plant Areas) site in Montenegro.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,487 m" },
+          { "label": "Base town", "value": "Andrijevica" },
+          { "label": "Peaks", "value": "3 main summits" }
+        ],
         "images": [
-          { "src": "mountains/m5.webp", "caption": "Covered in snow" },
-          { "src": "mountains/m8.jpg", "caption": "Hiking" },
-          { "src": "mountains/m9.jpg", "caption": "View" }
+          { "src": "mountains/m5.webp", "caption": "Snow peaks" },
+          { "src": "mountains/m8.jpg", "caption": "Hiking trails" },
+          { "src": "mountains/m9.jpg", "caption": "Panoramic views" }
         ]
       },
-      "prokletije": {
+      {
+        "id": "prokletije",
+        "number": "04",
         "name": "Prokletije & Visitor",
+        "desc": "Prokletije are a high mountain range located on the southeastern edge of the Dinaric Alps. Its highest peak, Jezerski Vrh, rises to 2,694 meters and is also the highest peak of the entire Dinaric mountain system. The surrounding area, including Visitor and its environment, is characterized by steep and hard-to-access rocky summits, rich forests of both deciduous and coniferous trees, and high-altitude green lakes, some of which are located directly beneath the mountain peaks.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,534 m" },
+          { "label": "Base town", "value": "Gusinje/Plav" }
+        ],
         "images": [
           { "src": "mountains/m10.webp", "caption": "Peaks" },
           { "src": "mountains/m11.jpg", "caption": "Hiking" },
           { "src": "mountains/m12.jpg", "caption": "National Park" }
         ]
       },
-      "orjen": {
+      {
+        "id": "orjen",
+        "number": "05",
         "name": "Orjen",
+        "desc": "Orjen is a coastal mountain in southwestern Montenegro, rising above the Adriatic Sea near the Bay of Kotor. It is known for its rugged karst landscape, steep slopes, and dramatic contrast between the mountains and the sea. Orjen is one of the wettest areas in Europe, which has created dense vegetation and diverse plant life despite its rocky terrain. Its peaks offer wide views over the Adriatic coast and the surrounding mountain ranges, making it a unique blend of Mediterranean and alpine nature.",
+        "facts": [
+          { "label": "Highest peak", "value": "1,894 m" },
+          { "label": "Base town", "value": "Herceg Novi" }
+        ],
         "images": [
           { "src": "mountains/m13.jpg", "caption": "Hiking" },
-          { "src": "mountains/m14.webp", "caption": "View from Orjen" },
-          { "src": "mountains/m15.jpg", "caption": "Kabao peak" }
+          { "src": "mountains/m14.webp", "caption": "Sea view" },
+          { "src": "mountains/m15.jpg", "caption": "Peak" }
         ]
       },
-      "lovcen": {
+      {
+        "id": "lovcen",
+        "number": "06",
         "name": "Lovćen",
+        "desc": "Lovćen is a mountain in southwestern Montenegro, rising above the Bay of Kotor and forming a powerful natural barrier between the coast and the inland region. It is known for its rocky karst landscape, steep slopes, and its cultural and historical significance to Montenegro. The mountain offers panoramic views of the Adriatic Sea and surrounding landscapes, while its unique position creates a mix of Mediterranean and continental climate influences.",
+        "facts": [
+          { "label": "Highest peak", "value": "1,749 m" },
+          { "label": "Base town", "value": "Cetinje" }
+        ],
         "images": [
           { "src": "mountains/m16.jpg", "caption": "Mountain" },
-          { "src": "mountains/m17.jpg", "caption": "Covered in snow" },
-          { "src": "mountains/m18.jpg", "caption": "View at Kotor Bay" }
+          { "src": "mountains/m17.jpg", "caption": "Snow views" },
+          { "src": "mountains/m18.jpg", "caption": "Bay of Kotor view" }
         ]
       },
-      "sinjajevina": {
+      {
+        "id": "sinjajevina",
+        "number": "07",
         "name": "Sinjajevina",
+        "desc": "Sinjajevina (also known as Sinjavina) is a mountain in Montenegro, located southeast of Durmitor. It is the largest mountain in the country in terms of area. The landscape is made up of numerous unevenly distributed peaks, mostly bare and without forest cover. Between them lie vast high-mountain pastures that stretch across the plateau-like terrain, giving Sinjajevina its wide and open character.",
+        "facts": [
+          { "label": "Highest point", "value": "2,276 m" },
+          { "label": "Base town", "value": "Mojkovac" }
+        ],
         "images": [
-          { "src": "mountains/m19.webp", "caption": "Mountain" },
-          { "src": "mountains/m20.jpg", "caption": "Cottage" },
-          { "src": "mountains/m21.webp", "caption": "Pure Nature" }
+          { "src": "mountains/m19.webp", "caption": "Plateau" },
+          { "src": "mountains/m20.jpg", "caption": "Cottages" },
+          { "src": "mountains/m21.webp", "caption": "Nature" }
         ]
       },
-      "hajla": {
+      {
+        "id": "hajla",
+        "number": "08",
         "name": "Hajla",
+        "desc": "Hajla is a mountain in northeastern Montenegro, located near the border with Kosovo. It is part of the rugged Dinaric mountain system and is known for its steep slopes, forested areas, and remote, less accessible terrain. The mountain is covered with a mix of dense coniferous and deciduous forests, which gradually give way to alpine pastures at higher elevations. Its peaks offer wide views of the surrounding mountains and valleys, making Hajla a quiet and less explored natural area with rich biodiversity and a strong sense of wilderness.",
+        "facts": [
+          { "label": "Highest peak", "value": "2,403 m" },
+          { "label": "Base town", "value": "Rožaje" }
+        ],
         "images": [
-          { "src": "mountains/m24.jpg", "caption": "Cottages" },
-          { "src": "mountains/m22.jpg", "caption": "Skiing" },
-          { "src": "mountains/m23.jpg", "caption": "Hiking" }
+          { "src": "mountains/m22.jpg", "caption": "Cottages" },
+          { "src": "mountains/m23.jpg", "caption": "Hiking" },
+          { "src": "mountains/m24.jpg", "caption": "Views" }
         ]
       }
-    }
+    ],
+    "coastal": [
+      {
+        "id": "kotor",
+        "number": "01",
+        "name": "Kotor",
+        "desc": "Kotor is a historic coastal town located in the Bay of Kotor, surrounded by dramatic limestone cliffs and medieval fortifications. It is known for its UNESCO-listed Old Town, narrow stone streets, and Venetian architecture. The town lies at the foot of steep mountains, creating one of the most striking fjord-like landscapes in the Adriatic.",
+        "facts": [
+          { "label": "UNESCO status", "value": "World Heritage Site" },
+          { "label": "Bay depth", "value": "Up to 60 m" },
+          { "label": "Old Town origin", "value": "12th century" }
+        ],
+        "images": [
+          { "src": "coastal/c1.jpg", "caption": "View" },
+          { "src": "coastal/c2.jpg", "caption": "Old Town walls" },
+          { "src": "coastal/c3.jpg", "caption": "Kotor at night" }
+        ]
+      },
+      {
+        "id": "budva",
+        "number": "02",
+        "name": "Budva",
+        "desc": "Budva is one of the oldest settlements on the Adriatic coast, famous for its sandy beaches, vibrant nightlife, and medieval Old Town. The city combines ancient stone architecture with modern tourism, making it one of the most popular destinations in Montenegro.",
+        "facts": [
+          { "label": "Age", "value": "Over 2,500 years" },
+          { "label": "Beaches", "value": "35 km coastline" },
+          { "label": "Old Town", "value": "15th century walls" }
+        ],
+        "images": [
+          { "src": "coastal/c4.webp", "caption": "View" },
+          { "src": "coastal/c5.jpg", "caption": "Old Town" },
+          { "src": "coastal/c6.jpg", "caption": "Beach" }
+        ]
+      },
+      {
+        "id": "herceg_novi",
+        "number": "03",
+        "name": "Herceg Novi",
+        "desc": "Herceg Novi is a coastal town at the entrance of the Bay of Kotor, known for its stair-like streets, fortresses, and lush Mediterranean vegetation. It sits at the foot of Mount Orjen, blending sea and mountain landscapes in a unique way.",
+        "facts": [
+          { "label": "Founded", "value": "1382" },
+          { "label": "Stairs", "value": "1,000+ steps" },
+          { "label": "Climate", "value": "Mediterranean" }
+        ],
+        "images": [
+          { "src": "coastal/c7.webp", "caption": "View at city" },
+          { "src": "coastal/c8.jpg", "caption": "Walkway" },
+          { "src": "coastal/c9.jpeg", "caption": "Kanli tower" }
+        ]
+      },
+      {
+        "id": "tivat",
+        "number": "04",
+        "name": "Tivat",
+        "desc": "Tivat is a modern coastal town in the Bay of Kotor, known for Porto Montenegro marina and luxury tourism. Once a small naval base, it has transformed into one of the most upscale destinations on the Adriatic coast.",
+        "facts": [
+          { "label": "Marina", "value": "Porto Montenegro" },
+          { "label": "Bay location", "value": "Central Boka Bay" }
+        ],
+        "images": [
+          { "src": "coastal/c10.webp", "caption": "City" },
+          { "src": "coastal/c11.jpg", "caption": "Porto Montenegro" },
+          { "src": "coastal/c12.jpg", "caption": "Sunset" }
+        ]
+      },
+      {
+        "id": "ulcinj",
+        "number": "05",
+        "name": "Ulcinj",
+        "desc": "Ulcinj is the southernmost coastal town in Montenegro, known for its long sandy beaches, oriental heritage, and strong winds ideal for kitesurfing. It has a unique cultural mix due to centuries of different influences.",
+        "facts": [
+          { "label": "Beach length", "value": "12 km (Velika Plaža)" },
+          { "label": "Old Town", "value": "2,500 years history" },
+          { "label": "Wind sport", "value": "Kitesurfing hotspot" }
+        ],
+        "images": [
+          { "src": "coastal/c13.webp", "caption": "Old Town" },
+          { "src": "coastal/c14.webp", "caption": "View from Beach" },
+          { "src": "coastal/c15.webp", "caption": "Sunset" }
+        ]
+      },
+      {
+        "id": "bar",
+        "number": "06",
+        "name": "Bar",
+        "desc": "Bar is a major coastal and port city in Montenegro, known for its modern port, olive groves, and the ruins of Stari Bar located inland. It connects Mediterranean seaside life with rich historical heritage.",
+        "facts": [
+          { "label": "Port", "value": "Largest in Montenegro" },
+          { "label": "Olive tree", "value": "Oldest ~2,000 years" },
+          { "label": "Old Bar", "value": "Medieval fortress ruins" }
+        ],
+        "images": [
+          { "src": "coastal/c16.jpg", "caption": "Panoramic view" },
+          { "src": "coastal/c17.webp", "caption": "Old Town" },
+          { "src": "coastal/c18.jpg", "caption": "Old olive" }
+        ]
+      }
+  ]
   }
 }
