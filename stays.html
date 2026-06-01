@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Stays — Sea to Sky</title>
+    <link rel="icon" type="image/png" href="sea2sky.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="SeaToSky.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header-placeholder"></div>
+<section id="stays-hero">
+    <h2>Find Your <em>Perfect Stay</em></h2>
+    <div class="search-bar">
+        <div class="field">
+            <span class="field-label">Destination</span>
+            <select id="city-input">
+                <option value="">Any city</option>
+                <option>Podgorica</option>
+                <option>Nikšić</option>
+                <option>Bijelo Polje</option>
+                <option>Herceg Novi</option>
+                <option>Pljevlja</option>
+                <option>Bar</option>
+                <option>Budva</option>
+                <option>Cetinje</option>
+                <option>Berane</option>
+                <option>Ulcinj</option>
+                <option>Tivat</option>
+                <option>Kotor</option>
+                <option>Rožaje</option>
+                <option>Mojkovac</option>
+                <option>Kolašin</option>
+                <option>Žabljak</option>
+                <option>Plav</option>
+                <option>Andrijevica</option>
+                <option>Danilovgrad</option>
+                <option>Šavnik</option>
+                <option>Plužine</option>
+                <option>Tuzi</option>
+                <option>Zeta</option>
+            </select>
+        </div>
+        <div class="field">
+            <span class="field-label">From</span>
+            <input type="date" id="checkin">
+        </div>
+        <div class="field">
+            <span class="field-label">To</span>
+            <input type="date" id="checkout">
+        </div>
+        <div class="field">
+            <span class="field-label">Guests</span>
+            <select id="guests">
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4+ guests</option>
+            </select>
+        </div>
+        <button class="search-btn" id="search-btn">Search →</button>
+    </div>
+</section>
+<section id="stays-results">
+    <div class="stays-results-header">
+        <h2>Available Stays</h2>
+        <p id="result-count"></p>
+    </div>
+    <div id="stays-grid"></div>
+</section>
+<footer class="parks-footer">
+    © 2025 Sea to Sky Montenegro. All rights reserved.
+</footer>
+<script src="header.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
