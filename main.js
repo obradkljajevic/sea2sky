@@ -187,9 +187,7 @@ if (lightbox) {
   });
 }
 
-/* =========================
-   👁 SCROLL REVEAL
-========================= */
+//SCROLL REVEAL
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -201,9 +199,7 @@ function observeSections() {
   document.querySelectorAll('.park-section').forEach(s => observer.observe(s));
 }
 
-/* =========================
-   🔐 PASSWORD LOGIC (UNCHANGED)
-========================= */
+//Password logic
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -258,3 +254,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+ 
+    document.querySelectorAll('.value-card, .team-card').forEach(el => observer2.observe(el));

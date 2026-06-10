@@ -848,3 +848,200 @@
     transition: background 0.2s;
 }
 .hotel-book-btn:hover { background: #0505a8; }
+
+#about-hero {
+    background-image:
+    linear-gradient(to bottom, rgba(3,3,105,0.35) 0%, rgba(3,3,105,0.70) 100%),
+    url('pozadina3.jpg');
+}
+.about-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+}
+.mission-text {
+    background: white;
+    padding: 80px 100px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mission-text .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #030369;
+    opacity: 0.55;
+    margin-bottom: 14px;
+}
+.mission-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #030369;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+.mission-text h2 em {
+    color: #a8c4ff;
+    font-style: normal;
+}
+.mission-text p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #555;
+    max-width: 480px;
+}
+.mission-visual {
+    background: #030369;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    flex-direction: column;
+    gap: 32px;
+}
+.mission-stat {
+    text-align: center;
+}
+.mission-stat-number {
+    font-size: 56px;
+    font-weight: 700;
+    color: #a8c4ff;
+    line-height: 1;
+}
+.mission-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-top: 8px;
+}
+.mission-divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+.about-values {
+    background: #f5f7ff;
+    padding: 80px 100px;
+}
+.values-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+.values-header .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #030369;
+    opacity: 0.55;
+    margin-bottom: 14px;
+}
+.values-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #030369;
+}
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+.value-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 36px;
+    box-shadow: 0 6px 24px rgba(3,3,105,0.06);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s;
+}
+.value-card.visible {
+    opacity: 1;
+    transform: none;
+}
+.value-card:hover {
+    box-shadow: 0 16px 40px rgba(3,3,105,0.12);
+    transform: translateY(-4px);
+}
+.value-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.value-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #030369;
+    margin-bottom: 12px;
+}
+.value-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777;
+}
+.about-cta {
+    background: #030369;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.about-cta h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.15;
+}
+.about-cta h2 em {
+    color: #a8c4ff;
+    font-style: normal;
+}
+.about-cta p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    max-width: 540px;
+    line-height: 1.7;
+}
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+.cta-btn-primary {
+    background: white;
+    color: #030369;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.cta-btn-primary:hover {
+    background: #a8c4ff;
+}
+.cta-btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 999px;
+    padding: 14px 32px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+}
